@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Opportunities - STGA</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/public.css">
+</head>
+<body>
+  <div class="top-bar"><div class="container"><div class="top-bar-left"><span>Regd. No. 776/23</span></div><div class="top-bar-right"><a href="mailto:info@stga.org.in">info@stga.org.in</a><a href="tel:+919876543210">Helpline: 98765 43210</a></div></div></div>
+  <header class="header"><div class="container">
+    <a href="index.html" class="logo"><img src="assets/logo/stga logo.png" alt="STGA" class="logo-img"><div class="logo-text"><span class="logo-name">STGA</span><span class="logo-tagline">Educate · Organize · Empower</span></div></a>
+    <nav class="nav"><a href="index.html" class="nav-link">Home</a><a href="about.html" class="nav-link">About</a><a href="state-committee.html" class="nav-link">State Committee</a><a href="membership.html" class="nav-link">Membership</a><a href="opportunities.html" class="nav-link active">Opportunities</a><a href="gallery.html" class="nav-link">Gallery</a><a href="contact.html" class="nav-link">Contact</a></nav>
+    <div class="header-actions"><a href="membership.html" class="btn btn-primary">JOIN NOW</a><button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Menu"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg></button></div>
+  </div></header>
+  <div class="mobile-nav" id="mobileNav"><div class="mobile-nav-header"><a href="index.html" class="logo"><img src="assets/logo/stga logo.png" alt="STGA" class="logo-img" style="height:40px"><span class="logo-name">STGA</span></a><button id="closeMobileNav"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button></div>
+    <nav class="mobile-nav-links"><a href="index.html">Home</a><a href="about.html">About</a><a href="state-committee.html">State Committee</a><a href="membership.html">Membership</a><a href="opportunities.html" class="active">Opportunities</a><a href="gallery.html">Gallery</a><a href="contact.html">Contact</a></nav>
+    <div class="mobile-nav-cta"><a href="membership.html" class="btn btn-primary" style="width:100%">JOIN NOW</a></div></div>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <h1 class="page-hero-title">Opportunities</h1>
+        <p class="page-hero-desc">Government jobs, scholarships, and competitive exam resources curated for ST graduates.</p>
+      </div>
+    </section>
+
+    <section class="content-section opportunities-section">
+      <div class="container">
+        <div class="filter-bar">
+          <div class="search-box">
+            <svg class="icon search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            <input type="search" class="form-control" id="oppSearch" placeholder="Search opportunities...">
+          </div>
+          <select class="form-control"><option>All Categories</option><option>Government Jobs</option><option>Scholarships</option><option>Competitive Exams</option></select>
+          <select class="form-control"><option>All States</option><option>All India</option><option>Telangana</option><option>Odisha</option></select>
+        </div>
+
+        <div class="tabs">
+          <button class="tab active" data-tab="all">All</button>
+          <button class="tab" data-tab="jobs">Government Jobs</button>
+          <button class="tab" data-tab="scholarships">Scholarships</button>
+          <button class="tab" data-tab="exams">Competitive Exams</button>
+        </div>
+
+        <div class="tab-content active" data-content="all">
+          <div class="opp-grid" style="margin-top:1.5rem">
+            <div class="opp-card">
+              <div class="opp-card-header"><span class="badge badge-primary">Government Jobs</span></div>
+              <h3 class="opp-title">SSC Combined Graduate Level 2026</h3>
+              <div class="opp-org">Staff Selection Commission</div>
+              <div class="opp-meta"><span>15 Apr 2026</span><span>All India</span></div>
+              <p class="opp-desc">Group B & C posts. ST reservation and age relaxation as per central norms.</p>
+              <button class="btn btn-outline btn-sm" onclick="showToast('Opportunity details (Demo)','info')">View Details</button>
+            </div>
+            <div class="opp-card">
+              <div class="opp-card-header"><span class="badge badge-gold">Scholarships</span></div>
+              <h3 class="opp-title">National Fellowship for ST Students</h3>
+              <div class="opp-org">Ministry of Tribal Affairs</div>
+              <div class="opp-meta"><span>30 Jun 2026</span><span>All India</span></div>
+              <p class="opp-desc">Fellowship for M.Phil / Ph.D. Monthly stipend and contingency grant.</p>
+              <button class="btn btn-outline btn-sm" onclick="showToast('Opportunity details (Demo)','info')">View Details</button>
+            </div>
+            <div class="opp-card">
+              <div class="opp-card-header"><span class="badge badge-info">Competitive Exams</span></div>
+              <h3 class="opp-title">UPSC Civil Services 2026</h3>
+              <div class="opp-org">Union Public Service Commission</div>
+              <div class="opp-meta"><span>21 Feb 2026</span><span>All India</span></div>
+              <p class="opp-desc">Preliminary exam. Age relaxation and extra attempts for ST candidates.</p>
+              <button class="btn btn-outline btn-sm" onclick="showToast('Opportunity details (Demo)','info')">View Details</button>
+            </div>
+            <div class="opp-card">
+              <div class="opp-card-header"><span class="badge badge-primary">Government Jobs</span></div>
+              <h3 class="opp-title">TSPSC Group I Services</h3>
+              <div class="opp-org">Telangana State Public Service Commission</div>
+              <div class="opp-meta"><span>10 May 2026</span><span>Telangana</span></div>
+              <p class="opp-desc">State civil services. Local ST reservation and district cadre options.</p>
+              <button class="btn btn-outline btn-sm" onclick="showToast('Opportunity details (Demo)','info')">View Details</button>
+            </div>
+            <div class="opp-card">
+              <div class="opp-card-header"><span class="badge badge-gold">Scholarships</span></div>
+              <h3 class="opp-title">Post-Matric Scholarship for ST</h3>
+              <div class="opp-org">State Tribal Welfare Departments</div>
+              <div class="opp-meta"><span>Ongoing</span><span>Multiple States</span></div>
+              <p class="opp-desc">Fee reimbursement and maintenance allowance for ST students.</p>
+              <button class="btn btn-outline btn-sm" onclick="showToast('Opportunity details (Demo)','info')">View Details</button>
+            </div>
+            <div class="opp-card">
+              <div class="opp-card-header"><span class="badge badge-info">Competitive Exams</span></div>
+              <h3 class="opp-title">IBPS PO / Clerk 2026</h3>
+              <div class="opp-org">Institute of Banking Personnel Selection</div>
+              <div class="opp-meta"><span>Aug 2026</span><span>All India</span></div>
+              <p class="opp-desc">Banking recruitment. ST category vacancies notified separately.</p>
+              <button class="btn btn-outline btn-sm" onclick="showToast('Opportunity details (Demo)','info')">View Details</button>
+            </div>
+          </div>
+        </div>
+        <div class="tab-content" data-content="jobs"><p class="text-muted" style="padding:2rem 0">Government jobs filtered view (Demo).</p></div>
+        <div class="tab-content" data-content="scholarships"><p class="text-muted" style="padding:2rem 0">Scholarships filtered view (Demo).</p></div>
+        <div class="tab-content" data-content="exams"><p class="text-muted" style="padding:2rem 0">Competitive exams filtered view (Demo).</p></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer"><div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand"><a href="index.html" class="logo" style="margin-bottom:1rem"><img src="assets/logo/stga logo.png" alt="STGA" class="logo-img" style="height:40px;filter:brightness(0) invert(1)"><span class="logo-name">STGA</span></a><p>Regd. No. 776/23</p></div>
+      <div><h4 class="footer-title">Links</h4><div class="footer-links"><a href="about.html">About</a><a href="membership.html">Membership</a></div></div>
+      <div><h4 class="footer-title">More</h4><div class="footer-links"><a href="gallery.html">Gallery</a><a href="contact.html">Contact</a><a href="admin/index.html">Admin</a></div></div>
+      <div><h4 class="footer-title">Contact</h4><div class="footer-links"><a href="mailto:info@stga.org.in">info@stga.org.in</a></div></div>
+    </div>
+    <div class="footer-bottom"><span>&copy; 2026 STGA</span><span>Demo — Phase 1</span></div>
+  </div></footer>
+  <script src="js/main.js"></script>
+  <script src="js/public.js"></script>
+</body>
+</html>

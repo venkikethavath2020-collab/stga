@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Membership - STGA</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/public.css">
+</head>
+<body>
+  <div class="top-bar"><div class="container"><div class="top-bar-left"><span>Regd. No. 776/23</span></div><div class="top-bar-right"><a href="mailto:info@stga.org.in">info@stga.org.in</a><a href="tel:+919876543210">Helpline: 98765 43210</a></div></div></div>
+  <header class="header"><div class="container">
+    <a href="index.html" class="logo"><img src="assets/logo/stga logo.png" alt="STGA" class="logo-img"><div class="logo-text"><span class="logo-name">STGA</span><span class="logo-tagline">Educate · Organize · Empower</span></div></a>
+    <nav class="nav"><a href="index.html" class="nav-link">Home</a><a href="about.html" class="nav-link">About</a><a href="state-committee.html" class="nav-link">State Committee</a><a href="membership.html" class="nav-link active">Membership</a><a href="opportunities.html" class="nav-link">Opportunities</a><a href="gallery.html" class="nav-link">Gallery</a><a href="contact.html" class="nav-link">Contact</a></nav>
+    <div class="header-actions"><a href="membership.html" class="btn btn-primary">JOIN NOW</a><button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Menu"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg></button></div>
+  </div></header>
+  <div class="mobile-nav" id="mobileNav"><div class="mobile-nav-header"><a href="index.html" class="logo"><img src="assets/logo/stga logo.png" alt="STGA" class="logo-img" style="height:40px"><span class="logo-name">STGA</span></a><button id="closeMobileNav"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button></div>
+    <nav class="mobile-nav-links"><a href="index.html">Home</a><a href="about.html">About</a><a href="state-committee.html">State Committee</a><a href="membership.html" class="active">Membership</a><a href="opportunities.html">Opportunities</a><a href="gallery.html">Gallery</a><a href="contact.html">Contact</a></nav>
+    <div class="mobile-nav-cta"><a href="membership.html" class="btn btn-primary" style="width:100%">JOIN NOW</a></div></div>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <h1 class="page-hero-title">Become a Member</h1>
+        <p class="page-hero-desc">Join the Scheduled Tribes Graduates Association and be part of a national movement for education, employment, and empowerment.</p>
+      </div>
+    </section>
+
+    <section class="content-section">
+      <div class="container" style="max-width:800px">
+        <div class="demo-banner" style="background:var(--gold-light);border:1px solid #f0d78c;border-radius:8px;padding:0.75rem 1rem;font-size:0.8125rem;color:#92600a;margin-bottom:1.5rem;display:flex;align-items:center;gap:0.5rem;">
+          <svg class="icon icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          This is a <strong>DEMO</strong> form. Submissions are simulated and no data is stored.
+        </div>
+
+        <div class="card">
+          <div class="card-header"><h2 class="card-title">Membership Application Form</h2></div>
+          <div class="card-body">
+            <form id="membershipForm">
+              <div class="form-row">
+                <div class="form-group">
+                  <label class="form-label">Full Name <span class="required">*</span></label>
+                  <input type="text" class="form-control" name="fullName" required placeholder="As per official records">
+                </div>
+                <div class="form-group">
+                  <label class="form-label">Father's Name <span class="required">*</span></label>
+                  <input type="text" class="form-control" name="fatherName" required>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label class="form-label">Gender <span class="required">*</span></label>
+                  <select class="form-control" name="gender" required>
+                    <option value="">Select</option>
+                    <option>Male</option>
+                    <option>Female</option>
+                    <option>Other</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label class="form-label">Date of Birth <span class="required">*</span></label>
+                  <input type="date" class="form-control" name="dob" required>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label class="form-label">ST Sub-Caste <span class="required">*</span></label>
+                  <input type="text" class="form-control" name="subCaste" required placeholder="e.g. Lambadi, Gond, Santhal">
+                </div>
+                <div class="form-group">
+                  <label class="form-label">Qualification <span class="required">*</span></label>
+                  <select class="form-control" name="qualification" required>
+                    <option value="">Select</option>
+                    <option>Graduation</option>
+                    <option>Post Graduation</option>
+                    <option>Ph.D</option>
+                    <option>Professional Degree</option>
+                    <option>Other</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label class="form-label">University / Institution <span class="required">*</span></label>
+                  <input type="text" class="form-control" name="university" required>
+                </div>
+                <div class="form-group">
+                  <label class="form-label">Year of Passing <span class="required">*</span></label>
+                  <input type="number" class="form-control" name="yearPassing" min="1980" max="2026" required placeholder="YYYY">
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label class="form-label">District <span class="required">*</span></label>
+                  <input type="text" class="form-control" name="district" required>
+                </div>
+                <div class="form-group">
+                  <label class="form-label">State <span class="required">*</span></label>
+                  <select class="form-control" name="state" required>
+                    <option value="">Select State</option>
+                    <option>Telangana</option>
+                    <option>Andhra Pradesh</option>
+                    <option>Odisha</option>
+                    <option>Jharkhand</option>
+                    <option>Chhattisgarh</option>
+                    <option>Madhya Pradesh</option>
+                    <option>Rajasthan</option>
+                    <option>Maharashtra</option>
+                    <option>Gujarat</option>
+                    <option>Karnataka</option>
+                    <option>West Bengal</option>
+                    <option>Assam</option>
+                    <option>Other</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label class="form-label">Job Status <span class="required">*</span></label>
+                  <select class="form-control" name="jobStatus" required>
+                    <option value="">Select</option>
+                    <option>Employed - Government</option>
+                    <option>Employed - Private</option>
+                    <option>Self Employed</option>
+                    <option>Student</option>
+                    <option>Unemployed / Seeking</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label class="form-label">Mobile Number <span class="required">*</span></label>
+                  <input type="tel" class="form-control" name="mobile" required placeholder="10-digit mobile">
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="form-label">Email Address <span class="required">*</span></label>
+                <input type="email" class="form-control" name="email" required>
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label class="form-label">Photo Upload</label>
+                  <div class="file-upload">
+                    <input type="file" accept="image/*">
+                    <svg class="icon" style="margin:0 auto 0.5rem;color:var(--muted)" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
+                    <div class="file-label" style="font-size:0.875rem;color:var(--muted)">Click to upload passport photo</div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="form-label">Aadhaar Number <span class="text-muted">(Optional)</span></label>
+                  <input type="text" class="form-control" name="aadhaar" placeholder="XXXX XXXX XXXX" maxlength="14">
+                  <p class="form-hint">Used only for verification. Stored securely in production.</p>
+                </div>
+              </div>
+              <div class="form-group" style="margin-top:1.5rem">
+                <label style="display:flex;align-items:flex-start;gap:0.5rem;font-size:0.875rem;cursor:pointer">
+                  <input type="checkbox" required style="margin-top:0.2rem">
+                  <span>I confirm that I belong to a Scheduled Tribe community and the information provided is true to the best of my knowledge. <span class="required">*</span></span>
+                </label>
+              </div>
+              <button type="submit" class="btn btn-primary btn-lg" style="width:100%;margin-top:1rem">Submit Membership Application</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Success Modal -->
+  <div class="modal-overlay" id="successModal">
+    <div class="modal">
+      <div class="modal-header">
+        <h3 class="modal-title">Application Submitted</h3>
+        <button class="modal-close" onclick="closeModal('successModal')" aria-label="Close">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        </button>
+      </div>
+      <div class="modal-body text-center">
+        <div style="width:64px;height:64px;margin:0 auto 1.5rem;background:#dcfce7;border-radius:50%;display:flex;align-items:center;justify-content:center;color:var(--success)">
+          <svg class="icon icon-xl" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+        </div>
+        <p style="font-size:1.0625rem;margin-bottom:0.5rem"><strong>Your application has been submitted successfully.</strong></p>
+        <p class="text-muted" style="margin-bottom:1rem">Application ID: <strong style="color:var(--primary)">STGA-APP-2026-00125</strong></p>
+        <div class="alert alert-warning" style="text-align:left;font-size:0.8125rem">
+          <strong>DEMO DATA</strong> — This is a visual prototype. No real application was submitted or stored.
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-primary" onclick="closeModal('successModal')">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer"><div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand"><a href="index.html" class="logo" style="margin-bottom:1rem"><img src="assets/logo/stga logo.png" alt="STGA" class="logo-img" style="height:40px;filter:brightness(0) invert(1)"><span class="logo-name">STGA</span></a><p>Regd. No. 776/23</p></div>
+      <div><h4 class="footer-title">Quick Links</h4><div class="footer-links"><a href="about.html">About</a><a href="opportunities.html">Opportunities</a></div></div>
+      <div><h4 class="footer-title">Resources</h4><div class="footer-links"><a href="gallery.html">Gallery</a><a href="contact.html">Contact</a><a href="admin/index.html">Admin</a></div></div>
+      <div><h4 class="footer-title">Contact</h4><div class="footer-links"><a href="mailto:info@stga.org.in">info@stga.org.in</a></div></div>
+    </div>
+    <div class="footer-bottom"><span>&copy; 2026 STGA</span><span>Demo — Phase 1</span></div>
+  </div></footer>
+  <script src="js/main.js"></script>
+  <script src="js/public.js"></script>
+</body>
+</html>

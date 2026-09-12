@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Notifications - STGA Admin</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/variables.css"><link rel="stylesheet" href="../css/base.css"><link rel="stylesheet" href="../css/components.css"><link rel="stylesheet" href="../css/admin.css">
+</head>
+<body class="admin-body">
+<div class="sidebar-overlay" id="sidebarOverlay"></div>
+<div class="admin-layout">
+<aside class="admin-sidebar" id="adminSidebar">
+<div class="sidebar-header"><img src="../assets/logo/stga logo.png" alt="STGA" class="sidebar-logo"><span class="sidebar-brand">STGA Admin</span></div>
+<nav class="sidebar-nav">
+<div class="nav-section"><div class="nav-section-title">Main</div>
+<a href="index.html" class="sidebar-link">Dashboard</a>
+<a href="members.html" class="sidebar-link">Members</a>
+<a href="applications.html" class="sidebar-link">Applications</a>
+<a href="committees.html" class="sidebar-link">State Committees</a>
+</div>
+<div class="nav-section"><div class="nav-section-title">Content</div>
+<a href="opportunities.html" class="sidebar-link">Opportunities</a>
+<a href="gallery.html" class="sidebar-link ">Gallery</a>
+<a href="certificates.html" class="sidebar-link ">Certificates</a>
+<a href="events.html" class="sidebar-link ">Events</a>
+</div>
+<div class="nav-section"><div class="nav-section-title">System</div>
+<a href="notifications.html" class="sidebar-link active">Notifications</a>
+<a href="users.html" class="sidebar-link ">Users & Roles</a>
+<a href="settings.html" class="sidebar-link ">Settings</a>
+</div>
+</nav>
+<div class="sidebar-footer"><div class="admin-profile"><div class="admin-avatar">RN</div><div class="admin-info"><div class="admin-name">Ramesh Naik</div><div class="admin-role">Super Admin</div></div><a href="../index.html" style="color:rgba(255,255,255,0.5)">Logout</a></div></div>
+</aside>
+<div class="admin-main">
+<header class="admin-header">
+<div class="admin-header-left"><button class="sidebar-toggle" id="sidebarToggle">☰</button>
+<div class="admin-search"><input type="search" class="form-control" placeholder="Search..."></div>
+</div>
+<div class="admin-header-right"><div class="admin-avatar" style="width:32px;height:32px;font-size:0.75rem">RN</div></div>
+</header>
+<div class="admin-content">
+
+<div class="page-header"><div class="page-header-text"><h1>Notifications</h1><p>Email, SMS and system notification history</p></div></div>
+<div class="table-wrapper"><table class="table">
+<thead><tr><th>Type</th><th>Subject</th><th>Recipients</th><th>Status</th><th>Sent At</th></tr></thead>
+<tbody>
+<tr><td><span class="badge badge-info">Email</span></td><td>Welcome to STGA</td><td>1,240</td><td><span class="badge badge-success">Sent</span></td><td>10 Sep 2026 10:30</td></tr>
+<tr><td><span class="badge badge-primary">SMS</span></td><td>Application status update</td><td>128</td><td><span class="badge badge-warning">Pending</span></td><td>—</td></tr>
+<tr><td><span class="badge badge-gray">System</span></td><td>Committee formation reminder</td><td>18</td><td><span class="badge badge-danger">Failed</span></td><td>08 Sep 2026</td></tr>
+</tbody></table></div>
+
+</div>
+</div>
+</div>
+<script src="../js/main.js"></script><script src="../js/admin.js"></script>
+</body>
+</html>

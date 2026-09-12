@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Career Assistance Requests - STGA Admin</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/variables.css"><link rel="stylesheet" href="../css/base.css"><link rel="stylesheet" href="../css/components.css"><link rel="stylesheet" href="../css/admin.css">
+</head>
+<body class="admin-body">
+<div class="sidebar-overlay" id="sidebarOverlay"></div>
+<div class="admin-layout">
+<aside class="admin-sidebar" id="adminSidebar">
+<div class="sidebar-header"><img src="../assets/logo/stga logo.png" alt="STGA" class="sidebar-logo"><span class="sidebar-brand">STGA Admin</span></div>
+<nav class="sidebar-nav">
+<div class="nav-section"><div class="nav-section-title">Main</div>
+<a href="index.html" class="sidebar-link">Dashboard</a>
+<a href="members.html" class="sidebar-link">Members</a>
+<a href="applications.html" class="sidebar-link">Applications</a>
+<a href="committees.html" class="sidebar-link">State Committees</a>
+</div>
+<div class="nav-section"><div class="nav-section-title">Content</div>
+<a href="opportunities.html" class="sidebar-link">Opportunities</a>
+<a href="scholarships.html" class="sidebar-link ">Scholarships</a>
+<a href="exams.html" class="sidebar-link ">Competitive Exams</a>
+<a href="career-assistance.html" class="sidebar-link active">Career Assistance</a>
+<a href="resources.html" class="sidebar-link ">Learning Resources</a>
+<a href="network.html" class="sidebar-link ">Network</a>
+<a href="events.html" class="sidebar-link">Events</a>
+<a href="gallery.html" class="sidebar-link">Gallery</a>
+<a href="certificates.html" class="sidebar-link">Certificates</a>
+</div>
+<div class="nav-section"><div class="nav-section-title">System</div>
+<a href="notifications.html" class="sidebar-link">Notifications</a>
+<a href="users.html" class="sidebar-link">Users & Roles</a>
+<a href="settings.html" class="sidebar-link">Settings</a>
+</div>
+</nav>
+<div class="sidebar-footer"><div class="admin-profile"><div class="admin-avatar">RN</div><div class="admin-info"><div class="admin-name">Ramesh Naik</div><div class="admin-role">Super Admin</div></div><a href="../index.html" style="color:rgba(255,255,255,0.5)">Logout</a></div></div>
+</aside>
+<div class="admin-main">
+<header class="admin-header"><div class="admin-header-left"><button class="sidebar-toggle" id="sidebarToggle">☰</button><div class="admin-search"><input type="search" class="form-control" placeholder="Search..."></div></div>
+<div class="admin-header-right"><div class="admin-avatar" style="width:32px;height:32px;font-size:0.75rem">RN</div></div></header>
+<div class="admin-content">
+
+<div class="page-header"><div class="page-header-text"><h1>Career Assistance Requests</h1><p>Manage member assistance requests</p></div></div>
+<div class="table-wrapper"><table class="table">
+<thead><tr><th>Request ID</th><th>Member</th><th>Category</th><th>Subject</th><th>Date</th><th>Assigned To</th><th>Status</th><th>Actions</th></tr></thead>
+<tbody>
+<tr><td>STGA-REQ-1025</td><td>Ravi Kumar</td><td>Resume Review</td><td>CV feedback for IT</td><td>10 Sep 2026</td><td>—</td><td><span class="badge badge-warning">Pending</span></td>
+<td class="actions"><button class="btn btn-ghost btn-sm">View</button><button class="btn btn-outline btn-sm">Assign</button></td></tr>
+<tr><td>STGA-REQ-1021</td><td>Priya Bhukya</td><td>Job Assistance</td><td>Govt job search</td><td>02 Sep 2026</td><td>Admin</td><td><span class="badge badge-info">In Progress</span></td>
+<td class="actions"><button class="btn btn-ghost btn-sm">View</button><button class="btn btn-outline btn-sm">Update</button></td></tr>
+<tr><td>STGA-REQ-1012</td><td>Sunita Oraon</td><td>Career Guidance</td><td>Career switch</td><td>15 Aug 2026</td><td>Admin</td><td><span class="badge badge-success">Completed</span></td>
+<td class="actions"><button class="btn btn-ghost btn-sm">View</button></td></tr>
+</tbody></table></div>
+
+</div>
+</div>
+</div>
+<script src="../js/main.js"></script><script src="../js/admin.js"></script>
+</body>
+</html>

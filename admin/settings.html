@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Settings - STGA Admin</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/variables.css"><link rel="stylesheet" href="../css/base.css"><link rel="stylesheet" href="../css/components.css"><link rel="stylesheet" href="../css/admin.css">
+</head>
+<body class="admin-body">
+<div class="sidebar-overlay" id="sidebarOverlay"></div>
+<div class="admin-layout">
+<aside class="admin-sidebar" id="adminSidebar">
+<div class="sidebar-header"><img src="../assets/logo/stga logo.png" alt="STGA" class="sidebar-logo"><span class="sidebar-brand">STGA Admin</span></div>
+<nav class="sidebar-nav">
+<div class="nav-section"><div class="nav-section-title">Main</div>
+<a href="index.html" class="sidebar-link">Dashboard</a>
+<a href="members.html" class="sidebar-link">Members</a>
+<a href="applications.html" class="sidebar-link">Applications</a>
+<a href="committees.html" class="sidebar-link">State Committees</a>
+</div>
+<div class="nav-section"><div class="nav-section-title">Content</div>
+<a href="opportunities.html" class="sidebar-link">Opportunities</a>
+<a href="gallery.html" class="sidebar-link ">Gallery</a>
+<a href="certificates.html" class="sidebar-link ">Certificates</a>
+<a href="events.html" class="sidebar-link ">Events</a>
+</div>
+<div class="nav-section"><div class="nav-section-title">System</div>
+<a href="notifications.html" class="sidebar-link ">Notifications</a>
+<a href="users.html" class="sidebar-link ">Users & Roles</a>
+<a href="settings.html" class="sidebar-link active">Settings</a>
+</div>
+</nav>
+<div class="sidebar-footer"><div class="admin-profile"><div class="admin-avatar">RN</div><div class="admin-info"><div class="admin-name">Ramesh Naik</div><div class="admin-role">Super Admin</div></div><a href="../index.html" style="color:rgba(255,255,255,0.5)">Logout</a></div></div>
+</aside>
+<div class="admin-main">
+<header class="admin-header">
+<div class="admin-header-left"><button class="sidebar-toggle" id="sidebarToggle">☰</button>
+<div class="admin-search"><input type="search" class="form-control" placeholder="Search..."></div>
+</div>
+<div class="admin-header-right"><div class="admin-avatar" style="width:32px;height:32px;font-size:0.75rem">RN</div></div>
+</header>
+<div class="admin-content">
+
+<div class="page-header"><div class="page-header-text"><h1>Settings</h1><p>Organization and system configuration</p></div></div>
+<div class="settings-grid">
+<div class="settings-section"><div class="settings-section-header"><h3 class="settings-section-title">Organization Settings</h3></div>
+<div class="settings-section-body"><form class="settings-form">
+<div class="form-group"><label class="form-label">Organization Name</label><input type="text" class="form-control" value="Scheduled Tribes Graduates Association"></div>
+<div class="form-group"><label class="form-label">Registration Number</label><input type="text" class="form-control" value="776/23"></div>
+<div class="form-group"><label class="form-label">Tagline</label><input type="text" class="form-control" value="Educate, Organize, Empower - For ST Graduates"></div>
+<button type="submit" class="btn btn-primary">Save Changes</button>
+</form></div></div>
+<div class="settings-section"><div class="settings-section-header"><h3 class="settings-section-title">Contact Settings</h3></div>
+<div class="settings-section-body"><form class="settings-form">
+<div class="form-row"><div class="form-group"><label class="form-label">Email</label><input type="email" class="form-control" value="info@stga.org.in"></div>
+<div class="form-group"><label class="form-label">Helpline</label><input type="tel" class="form-control" value="+91 98765 43210"></div></div>
+<button type="submit" class="btn btn-primary">Save Changes</button>
+</form></div></div>
+<div class="settings-section"><div class="settings-section-header"><h3 class="settings-section-title">Notification Settings</h3></div>
+<div class="settings-section-body"><form class="settings-form">
+<div class="form-group"><label style="display:flex;align-items:center;gap:0.5rem;cursor:pointer"><input type="checkbox" checked> Email for new applications</label></div>
+<div class="form-group"><label style="display:flex;align-items:center;gap:0.5rem;cursor:pointer"><input type="checkbox" checked> SMS on status change</label></div>
+<button type="submit" class="btn btn-primary">Save Changes</button>
+</form></div></div>
+</div>
+
+</div>
+</div>
+</div>
+<script src="../js/main.js"></script><script src="../js/admin.js"></script>
+</body>
+</html>
